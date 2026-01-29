@@ -3,12 +3,14 @@
 # 🎬 Video Script AI Generator
 
 An intelligent and interactive video scriptwriting system that analyzes video content and helps users create professional narration scripts with AI-generated voiceovers. The system is designed as a co-creative partner, keeping the user in control at every key creative decision.
+
 ---
 
 ## 💡 Overview
 
 **Input**: Video file (MP4/MOV) - silent or with existing audio (will be replaced)
-**Output**: Video with AI-generated voiceover matching the user's cloned voice (or ElevenLabs presets)
+
+**Output**: Video with AI-generated voiceover using  the user's cloned voice (or ElevenLabs presets)
 
 **Key design principle**: Human-in-the-loop validation at each stage rather than single-pass generation.
 
@@ -149,7 +151,7 @@ streamlit run streamlit_app.py
 
 ### Creating Your Video
 
-1. **Discovery Phase** → Answer 3 questions about your video's story, audience, and style
+1. **Discovery Phase** → Answer 3 questions about your video's story, audience, and style. System confirms understanding before generating scripts.
 2. **Script Generation** → Review 2 variants (A/B) with different tones
 3. **Script Refinement**:
    - **Select a variant** (CHOOSE_A or CHOOSE_B) → Moves to voice phase
@@ -160,11 +162,11 @@ streamlit run streamlit_app.py
 5. **Final Review**:
    - Watch complete result
    - Adjust voice (*"faster"*, *"more calm"*) → Regenerates audio
-   - Change script → Returns to Script refinementphase (step 3) and regenerates a new audio
+   - Change script → Returns to Script refinement phase (step 3) and regenerates a new audio
    - Click **SAVE** → Export final video
 
- **Iterative design**: You can refine script/voice 
-   as many times as needed before clicking SAVE.
+ **Iterative design**: You can refine script/voice as many times as needed before clicking SAVE.
+ 
 💡 **Key actions**: `CHOOSE_A/B` (select variant), `VALIDATE` (approve script/voice), `SAVE` (export)
 
 ⏱️ **Typical workflow**: 10-15 minutes for a 30-second video
