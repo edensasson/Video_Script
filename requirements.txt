@@ -1,0 +1,19 @@
+# Logic & AI
+google-genai
+langgraph
+python-dotenv
+
+# Video  Processing
+moviepy
+scenedetect
+opencv-python
+
+#Audio
+scipy
+sounddevice
+requests
+elevenlabs
+
+# UI (Streamlit)
+streamlit
+audio-recorder-streamlit
