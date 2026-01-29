@@ -90,15 +90,26 @@ Ensure you have the following installed:
 ### Installation
 
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/edensasson/Video_Script.git
    cd Video_Script
-   ```
+```
 
-2. Install the required dependencies:
-   ```bash
+2. Create and activate a virtual environment (recommended):
+```bash
+   # On macOS/Linux
+   python3 -m venv venv
+   source venv/bin/activate
+   
+   # On Windows
+   python -m venv venv
+   venv\Scripts\activate
+```
+
+3. Install the required dependencies:
+```bash
    pip install -r requirements.txt
-   ```
+```
 
 ---
 
